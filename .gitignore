@@ -7,6 +7,20 @@
 # BlueJ files
 *.ctxt
 
+# Compiled Java class files
+*.class
+/.settings
+.git
+.project
+.classpath
+target
+test-output
+out
+
+# JetBrains IDE
+.idea/
+*.iml
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
