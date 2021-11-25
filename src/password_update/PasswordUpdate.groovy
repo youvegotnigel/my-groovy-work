@@ -38,7 +38,7 @@ def getFileContent(String filePath){
 
 def getNewPassword(){
     String alphabet = (('A'..'Z')+('0'..'9')).join()
-    def length = 9
+    def length = 12
     key = new Random().with {
         (1..length).collect { alphabet[ nextInt( alphabet.length() ) ] }.join()
     }
