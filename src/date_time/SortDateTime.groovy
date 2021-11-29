@@ -5,8 +5,8 @@ import org.testng.Assert
 import java.text.SimpleDateFormat
 
 
-def dates = ["11-May-2020", "03-Mar-2020", "13-Feb-2020", "02-Feb-2020"]
-def sorted_dates = ["02-Feb-2020", "13-Feb-2020", "03-Mar-2020", "11-May-2020"]
+def dates = ["25-Nov-2021 12:46:09 AM", "25-Nov-2021 12:36:21 AM", "25-Nov-2021 12:36:21 AM", "25-Nov-2021 12:37:56 AM", "25-Nov-2021 12:37:56 AM"]
+def sorted_dates = ["25-Nov-2021 12:36:21 AM", "25-Nov-2021 12:36:21 AM", "25-Nov-2021 12:37:56 AM", "25-Nov-2021 12:37:56 AM", "25-Nov-2021 12:46:09 AM"]
 
 //def sorted_dates = dates.sort()
 
@@ -14,7 +14,7 @@ println("Before Sort ::: " + dates)
 
 Date[] date = new Date[dates.size()]
 
-SimpleDateFormat format =new SimpleDateFormat("dd-MMM-yyyy")
+SimpleDateFormat format =new SimpleDateFormat("dd-MMM-yyyy hh:mm:ss a", Locale.ENGLISH)
 
 for (def i = 0; i < dates.size(); i++) {
     date[i] = format.parse(dates[i])
@@ -35,4 +35,4 @@ for (def i = 0; i < dates.size(); i++) {
 
 println("After sort and format ::: " + newDate)
 
-assert newDate.equals(sorted_dates)
+assert newDate == sorted_dates
