@@ -2,8 +2,8 @@ package date_time
 
 import java.text.SimpleDateFormat
 
-def dates = ["25-Nov-2021 12:46:09 AM", "25-Nov-2021 12:36:21 AM", "25-Nov-2021 12:36:21 AM", "25-Nov-2021 12:37:56 AM", "25-Nov-2021 12:37:56 AM"]
-def sorted_dates = ["25-Nov-2021 12:36:21 AM", "25-Nov-2021 12:36:21 AM", "25-Nov-2021 12:37:56 AM", "25-Nov-2021 12:37:56 AM", "25-Nov-2021 12:46:09 AM"]
+def dates = ["25-Nov-2021 12:46:09 AM", "25-Nov-2021 12:36:20 AM", "25-Nov-2021 12:36:21 AM", "25-Nov-2021 12:38:56 AM", "25-Nov-2021 12:37:56 AM"]
+def sorted_dates = ["25-Nov-2021 12:36:20 AM", "25-Nov-2021 12:36:21 AM", "25-Nov-2021 12:37:56 AM", "25-Nov-2021 12:38:56 AM", "25-Nov-2021 12:46:09 AM"]
 
 //def sorted_dates = dates.sort()
 
