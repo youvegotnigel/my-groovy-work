@@ -9,4 +9,4 @@ def val2 = 5
 
 def val3 = val1 + val2
 
-println(val3)
+assert val3 == 5 : "test failed expected value was 9\n"
